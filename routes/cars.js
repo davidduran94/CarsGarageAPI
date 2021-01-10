@@ -77,7 +77,7 @@ function ecommerceApi (app) {
                 
             }catch(error) {
                 res.status(500).json({
-                    data: [],
+                    data: [error],
                     message: 'error'
                 });
             }
